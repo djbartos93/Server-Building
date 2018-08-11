@@ -11,4 +11,7 @@ echo "###CONFIGURE TELEGRAF###"
 mv telegraf-base.conf /etc/telegraf/telegraf.conf
 echo "##**NOTE**##"
 echo -e "\e[33mYou will need to change the hostname, username and password of telegraf"
+echo -e "\e[95mInstalling ZSH"
+sudo yum -y install zsh
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 echo -e "\e[32mDone!"
