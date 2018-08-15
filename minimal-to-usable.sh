@@ -1,9 +1,9 @@
-#!/usr/bin/
 echo -e "\e[95m--> Updating CentOS System"
 yum -y update
 echo -e "\e[95m***Installing base packages****"
 yum install net-tools nano wget -y
 echo -e "\e[42m***Installing Telegraf****"
+yum -y install sysstat
 wget https://dl.influxdata.com/telegraf/releases/telegraf-1.7.3-1.x86_64.rpm
 sudo yum localinstall telegraf-1.7.3-1.x86_64.rpm
 
